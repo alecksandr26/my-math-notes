@@ -1,0 +1,77 @@
+\documentclass[12pt]{book}
+
+\usepackage[margin=0.8in]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{tgbonum}
+
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{varwidth}
+
+
+
+\pgfplotsset{width=10cm,compat=1.9}
+\graphicspath{{./img}}
+
+\usepgfplotslibrary{external}
+\usetikzlibrary{calc}
+
+\let\cleardoublepage=\clearpage
+
+\newcommand\Chapter[2]{
+  \chapter[#1: {\itshape#2}]{#1\\[2ex]\Large\itshape#2}
+}
+
+\newcommand{\changefont}{
+    \fontsize{9}{11}\selectfont
+}
+\fancyhf{}
+
+\fancyhead[L]{\changefont \slshape \leftmark\\}
+\fancyhead[R]{\changefont \slshape \rightmark}
+\fancyfoot[R]{\thepage}
+\pagestyle{fancy}
+
+\usepackage{lmodern}
+
+\title{\textbf{My Preliminary Notes In Mathematics}}
+\author{\textbf{By Erick Alejandro Carrillo López}}
+\date{2024/05/30}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{Contents}
+
+\Chapter{Introduction}{The Purpuse of these Notes}
+\include{chapters/introduction}
+
+\Chapter{The Symbolism of Mathematics}{An Introduction to Algebra}
+\include{chapters/symbolism}
+
+\chapter{References}
+\begin{itemize}
+\item Murphy, P. A. (2021, february, 27). Who Says Nature is Mathematical? - cantor’s paradise. Cantor’s Paradise. https://www.cantorsparadise.com/who-says-nature-is-mathematical-1abdc1330224
+\item ¿Qué es matemática? (2020, January 18) published by Matemáticas en Nuevo León.
+\item Whitehead, A. N. (2022). An introduction to mathematics. Legare Street Press.
+\item Courant, R., \& Robbins, H. (1979). What is mathematics?: An elementary approach to ideas and methods.
+  Oxford University Press.
+\item Baldor, A. (2017). Algebra (4nd ed.). Patria.xb
+\item Guthrie, W. K. C. (1990). Los Filosofos Griegos: De Tales a Aristoteles. Fondo de Cultura Economica.
+\end{itemize}
+
+
+\end{document}
+
+
+
